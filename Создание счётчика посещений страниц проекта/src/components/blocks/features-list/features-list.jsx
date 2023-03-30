@@ -1,8 +1,8 @@
-import React from 'react';
-import {Features, StyledButton, StyledTitle} from './styles';
-import {Li, Ul} from '/src/components/styled';
-import FactoryFeatureCard from '/src/components/ui/factory-feature-card/factory-feature-card';
-import {AppRoute} from '/src/const';
+import React from "react";
+import { Features, StyledButton, StyledTitle } from "./styles";
+import { Li, Ul } from "/src/components/styled";
+import { AppRoute } from "/src/const";
+import { AbstractFactory } from "../../ui/abstract-factory/abstract-factory";
 
 // список преимуществ
 function FeaturesList({
@@ -10,11 +10,11 @@ function FeaturesList({
 }) {
   return features && features.length ? (
     <Features>
-      <StyledTitle as='h2'>Почему фермерские продукты лучше?</StyledTitle>
+      <StyledTitle as="h2">Почему фермерские продукты лучше?</StyledTitle>
       <Ul $isGridList>
-        {features.map(feature => (
+        {features.map((feature) => (
           <Li key={feature.id}>
-            <FactoryFeatureCard {...feature} />
+            {AbstractFactory.create("title", feature).create("card", feature)}
           </Li>
         ))}
       </Ul>

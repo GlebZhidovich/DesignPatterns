@@ -8,10 +8,12 @@ function FeatureCard({
   owner, // владелец особенности (обычный магазин, фермерский)
   about, // описание особенности
   isNegative, // является ли особенность отрицательной
-  image // иконка
+  image, // иконка
 }) {
   return (
     <Feature isNegative={isNegative}>
+      <Text dangerouslySetInnerHTML={{ __html: about }} />
+      <hr />
       <Header>
         <Image width={56} height={56} src={image} alt={title} />
         <div>
@@ -21,7 +23,6 @@ function FeatureCard({
           </Title>
         </div>
       </Header>
-      <Text dangerouslySetInnerHTML={{ __html: about }} />
     </Feature>
   );
 }
