@@ -1,5 +1,5 @@
 import React from "react";
-import { Ul } from "/src/components/styled";
+import { Ul } from "components/styled";
 import { Option, Property } from "./styles";
 
 // Логотип сайта с названием

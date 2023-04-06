@@ -1,7 +1,7 @@
 import React from "react";
 import { Features, StyledButton, StyledTitle } from "./styles";
-import { Li, Ul } from "/src/components/styled";
-import { AppRoute } from "/src/const";
+import { Li, Ul } from "components/styled";
+import { AppRoute } from "const";
 import { AbstractFactory } from "../../ui/abstract-factory/abstract-factory";
 
 // список преимуществ

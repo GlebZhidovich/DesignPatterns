@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Button from "/src/components/ui/button/button";
+import Button from "components/ui/button/button";
 
 export const StyledButton = styled(Button)`
   position: relative;

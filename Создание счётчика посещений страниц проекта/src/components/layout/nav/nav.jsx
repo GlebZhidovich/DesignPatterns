@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "/src/components/ui/button/button";
-import { Ul, Li } from "/src/components/styled";
-import { AppRoute } from "/src/const";
+import Button from "components/ui/button/button";
+import { Ul, Li } from "components/styled";
+import { AppRoute } from "const";
 import { StyledButton } from "./styles";
 import { useLocation } from "react-router-dom";
 

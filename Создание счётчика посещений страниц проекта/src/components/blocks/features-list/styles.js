@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Section } from "/src/components/styled";
-import Title from "/src/components/ui/title/title";
-import Button from "/src/components/ui/button/button";
+import { Section } from "components/styled";
+import Title from "components/ui/title/title";
+import Button from "components/ui/button/button";
 
 export const Features = styled(Section)`
   position: relative;

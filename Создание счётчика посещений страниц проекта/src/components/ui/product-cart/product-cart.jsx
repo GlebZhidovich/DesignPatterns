@@ -1,9 +1,9 @@
 import React from "react";
-import Panel from "/src/components/ui/panel/panel";
-import { TitleSize } from "/src/components/ui/title/title";
+import Panel from "components/ui/panel/panel";
+import { TitleSize } from "components/ui/title/title";
 import { ProductImage, ProductTitle, Price, ContentWrapper } from "./styles";
-import Tabs from "/src/components/ui/tabs/tabs";
-import OptionsList from "/src/components/ui/options-list/options-list";
+import Tabs from "components/ui/tabs/tabs";
+import OptionsList from "components/ui/options-list/options-list";
 
 function ProductCart({ product }) {
   const tabsList = [

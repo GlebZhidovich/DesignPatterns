@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
-import { Section, Label } from "/src/components/styled";
-import TextInput from "/src/components/ui/text-input/text-input";
+import { Section, Label } from "components/styled";
+import TextInput from "components/ui/text-input/text-input";
 import { Swiper } from "swiper/react";
-import checkboxSelect from "/src/assets/checkbox.svg";
-import Price from "/src/components/ui/price/price";
+import checkboxSelect from "assets/checkbox.svg";
+import Price from "components/ui/price/price";
 
 const leftWidth = "353px";
 

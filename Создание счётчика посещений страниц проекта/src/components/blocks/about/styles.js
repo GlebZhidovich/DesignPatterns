@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { P, Section } from "/src/components/styled";
-import aboutImage from "/src/assets/about.svg";
+import { P, Section } from "components/styled";
+import aboutImage from "assets/about.svg";
 
 export const StyledAbout = styled(Section)`
   position: relative;

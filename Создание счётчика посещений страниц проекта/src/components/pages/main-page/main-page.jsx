@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import About from "/src/components/blocks/about/about";
-import FeaturesList from "/src/components/blocks/features-list/features-list";
-import { textToUser } from "/src/const";
-import { SingletonCounterService } from "/src/services/counter.service";
-import { BuilderPages } from "../../builders/builder-pages/builder-pages";
+import About from "components/blocks/about/about";
+import FeaturesList from "components/blocks/features-list/features-list";
+import { SingletonCounterService } from "services/counter.service";
+import { textToUser } from "const";
+import { BuilderPages } from "components/builders/builder-pages/builder-pages";
 
 const singletonCounterService = new SingletonCounterService();
 

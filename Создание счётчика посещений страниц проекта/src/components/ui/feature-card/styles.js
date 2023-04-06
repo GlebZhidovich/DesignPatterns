@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Img, P } from "/src/components/styled";
+import { Img, P } from "components/styled";
 
 export const Feature = styled.article`
   width: 540px;

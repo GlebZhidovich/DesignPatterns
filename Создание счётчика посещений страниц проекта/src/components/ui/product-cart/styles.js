@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Img } from "/src/components/styled";
-import Title from "/src/components/ui/title/title";
+import { Img } from "components/styled";
+import Title from "components/ui/title/title";
 
 export const ProductImage = styled(Img)`
   width: 248px;

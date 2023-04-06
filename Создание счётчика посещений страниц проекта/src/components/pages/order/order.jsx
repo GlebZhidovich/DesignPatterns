@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Panel from "/src/components/ui/panel/panel";
-import Title, { TitleSize } from "/src/components/ui/title/title";
-import ProductCart from "/src/components/ui/product-cart/product-cart";
-import Button from "/src/components/ui/button/button";
-import CheckboxList from "/src/components/ui/checkbox-list/checkbox-list";
+import Panel from "components/ui/panel/panel";
+import Title, { TitleSize } from "components/ui/title/title";
+import ProductCart from "components/ui/product-cart/product-cart";
+import Button from "components/ui/button/button";
+import CheckboxList from "components/ui/checkbox-list/checkbox-list";
 
 import {
   LeftColumn,

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Li } from "/src/components/styled";
+import { Li } from "components/styled";
 
 export const Option = styled(Li)`
   margin-bottom: 8px;

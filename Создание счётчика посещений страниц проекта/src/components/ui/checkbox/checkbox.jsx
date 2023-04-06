@@ -1,5 +1,5 @@
 import React from "react";
-import { Label, VisuallyHiddenInput } from "/src/components/styled";
+import { Label, VisuallyHiddenInput } from "components/styled";
 
 // чекбокс
 function Checkbox({
