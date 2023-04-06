@@ -1,32 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function TimeServices() {
   const [pull, setPull] = useState({});
 
   const getTime = () => {
-    // Создаём новый объект (пул)
+    const date = new Date();
+    const start = `${date.getHours()} : ${date.getMinutes()}`;
     const newPull = {
-      // Заполняет пул актуальным временем захода на страницу
-      FIRST_TIME: new Date().getHours(),
+      START_APP: start,
     };
-    // Устанавливаем новый пул как состояние компонента
     setPull(newPull);
   };
 
   useEffect(() => {
-    //Смотрим, заполнено ли свойство. Если его нет, то заполняем
-    !pull.FIRST_TIME && getTime();
-
-    //Добавляем pull в параметр useEffect, чтобы хук следил за состоянием этого атрибута и реагировал на его изменения, обновляя компонент
+    !pull.START_APP && getTime();
   }, [pull]);
 
   return (
     <div>
       Время первого захода на страницу
-      <br />В {pull?.FIRST_TIME} часов
-      <br />
-      Время первого ухода со страницы
-      <br />В {pull?.LAST_TIME} часов
+      <br />В {pull?.START_APP} часов
     </div>
   );
 }
